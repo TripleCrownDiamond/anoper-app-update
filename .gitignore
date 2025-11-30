@@ -1,0 +1,17 @@
+configs/databaseconnect.php
+cardcreate/datas/files/
+cardcreate/datas/files/*.zip
+cardcreate/datas/files.5653/
+cardcreate/datas/files.5653/*.zip
+**/node_modules/
+**/error_log
+.env
+.env.local
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+cardcreate/card_generated/
+cardcreate/old_files/
+assets/*.sql
+u670386639_ANOPER.sql

